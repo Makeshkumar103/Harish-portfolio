@@ -1,0 +1,20 @@
+<div className="flex flex-col items-center gap-6">
+    <div className="flex items-center gap-4">
+        <div className="p-4 bg-primary/10 rounded-full text-primary">
+            <Phone className="w-8 h-8" />
+        </div>
+        <div>
+            <div className="text-sm text-muted">Call Me</div>
+            <div className="text-lg font-bold text-white">+91 9344407886</div>
+        </div>
+    </div>
+    <div className="flex items-center gap-4">
+        <div className="p-4 bg-primary/10 rounded-full text-primary">
+            <Mail className="w-8 h-8" />
+        </div>
+        <div>
+            <div className="text-sm text-muted">Email Me</div>
+            <div className="text-lg font-bold text-white">arulmuthuvel498@gmail.com</div>
+        </div>
+    </div>
+</div>
