@@ -13,7 +13,8 @@
 - Stack: Next.js 14, React 18, TypeScript, Tailwind 3, lucide-react
 - `next` is pinned to exactly `14.2.5` — newer 14.2.x (e.g. 14.2.35) fail `next build` during build-trace collection (`_not-found/page.js.nft.json` ENOENT); do not bump without re-verifying `npm run build`
 - Scripts: `npm run dev` (dev), `npm run build` (production export), `npm run lint` (next lint)
-- Deploy: `netlify.toml` runs `npm run build` and publishes `out/` (static export with SPA 404 fallback)
+- Deploy: GitHub Pages via `.github/workflows/deploy.yml` (GitHub Actions) — builds `out/` and deploys to `https://makeshkumar103.github.io/Harish-portfolio/`
+- `next.config.js` sets `output: 'export'` with `basePath: '/Harish-portfolio'`; internal links must use `next/link` (plain `<a href="/...">` breaks under the basePath) and the GitHub Pages source must be set to "GitHub Actions" in repo settings
 - Routes live in `src/app`; shared UI lives in `src/components`; docs and source assets live in `docs/`
 - Public assets (e.g., profile image) live in `public/`; source assets stay in `docs/`
 - Interactive components use `"use client"`; `@/` import alias maps to `src/`

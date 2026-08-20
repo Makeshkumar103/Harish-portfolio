@@ -43,13 +43,13 @@ const Footer = () => {
           >
             <Linkedin className="h-5 w-5" />
           </a>
-          <a
+          <Link
             href="/contact"
             aria-label="Contact"
             className="h-10 w-10 rounded-full bg-card border border-white/10 flex items-center justify-center text-muted hover:text-primary hover:border-primary/40 transition-colors"
           >
             <Mail className="h-5 w-5" />
-          </a>
+          </Link>
         </div>
       </div>
 

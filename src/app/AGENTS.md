@@ -9,7 +9,7 @@
 - `layout.tsx` — root layout: metadata, Inter + Sora fonts, Navbar, `<main>`, Footer
 - `globals.css` — Tailwind directives, theme variables (`--background`, `--foreground`), and `text-gradient`, `glass`, `bg-grid` utilities
 - `page.tsx` — home/landing page (hero, stats, services, skills, experience timeline, CTA)
-- `about/`, `skills/`, `projects/`, `contact/` — route folders, each with `page.tsx` (`projects/` presents SEO services)
+- `about/`, `skills/`, `projects/`, `contact/` — route folders, each with `page.tsx` (`projects/` presents SEO services; `contact/` adds `ContactForm.tsx`, a `"use client"` form that composes a `mailto:` link — no backend needed for static hosting)
 
 ## Local Contracts
 

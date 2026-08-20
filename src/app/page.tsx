@@ -115,10 +115,10 @@ export default function Home() {
                 Explore My Work <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
-                href="/contact"
+                href="/resume.pdf"
                 className="border border-white/20 hover:bg-white/5 text-white px-7 py-3.5 rounded-xl font-semibold transition-colors"
               >
-                Contact Me
+                Resume
               </Link>
               <a
                 href="https://www.linkedin.com/in/harish-h-63789a382"
